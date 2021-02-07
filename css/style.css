@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -16,7 +22,7 @@ body {
     text-align: center;
 }
 
-.navbar>ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,7 +48,8 @@ body {
 
 .column {
     float: left;
-    padding: 10px;
+    overflow: hidden;
+    padding: 0 10px 10px 10px;
 }
 
 .left, .right {
@@ -51,6 +58,11 @@ body {
 
 .middle {
     width: 50%;
+}
+
+.row h2 {
+	text-align: center;
+	margin-bottom: 0;
 }
 
 .row:after {
